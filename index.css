@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+  }
+  .zone{
+    font-size: 3em;
+    border-radius: 4px;
+    border: 1px solid#bbb;
+    background-color: rgba(0, 0, 0, 0.6)
+  }
+
+.main-nav{
+text-transform: capitalize;
+display: flex;
+justify-content: center;
+list-style: none;
+font-size: 0.7em;
+margin: 0em;
+
+}
+
+.sticky{
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+li{
+padding: 20px;
+}
+
+.intro{
+    background-image: url(download.jpg);
+    background-attachment: fixed;
+    padding: 11em;
+    background-size:contain;
+}
