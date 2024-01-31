@@ -28,9 +28,42 @@ li{
 padding: 20px;
 }
 
+.first{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3em;
+  text-decoration: double;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ceo{
+  float: left; 
+}
+
 .intro{
-    background-image: url(download.jpg);
+    background-image: url(body.jpg);
     background-attachment: fixed;
+    text-wrap: wrap;
+    color: white;
     padding: 11em;
     background-size:contain;
+}
+
+.photos{
+  display: flex;
+  align-items: center;
+}
+
+.apply{
+  float: left;
+}
+
+.immedate{
+  padding: 6em;
+}
+
+footer{
+  background-image: url(footer.jpg);
+  padding: 4em;
+  background-attachment: fixed;
 }
