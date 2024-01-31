@@ -1,36 +1,39 @@
 /* selector
     property : value; */
    BODY{
+    margin: 0;
     background-color: rgba(77, 170, 0,0.7 );
     text-align: center;
     color: rgba(0, 100, 57,1);
    }
 
-    .topnav {
-    margin: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 6px;
-    padding-top: 30px;
-    overflow: hidden;
-    background-color: rgba(80, 190, 0,0.8);
+  .zone{
+    
+    font-size: 3em;
+    border-radius: 4px;
+    border: 1px solid#bbb;
+    background-color: rgba(0, 0, 0, 0.6)
   }
-  
-  .img { width: min-content;height: 69px;
-    float: left;
 
+  .main-nav{
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0em;
+
+ }
+
+ .sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
-  .topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
+
+   li{
+    padding: 20px;
   }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }   
 
   .personalinformation{
     float: left;

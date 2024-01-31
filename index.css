@@ -29,15 +29,15 @@ padding: 20px;
 }
 
 .first{
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 3em;
+  background-color: #000000;
+  text-align: center;
+  padding: 2em;
   text-decoration: double;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .ceo{
-  float: left; 
+ width: 750px; height: 250px;
 }
 
 .intro{
@@ -47,23 +47,30 @@ padding: 20px;
     color: white;
     padding: 11em;
     background-size:contain;
+    align-items: center;
 }
+
+h1{
+  color: blue;
+}
+
 
 .photos{
   display: flex;
-  align-items: center;
 }
 
 .apply{
   float: left;
 }
 
-.immedate{
-  padding: 6em;
+.immidate{
+  text-align: center;
 }
 
 footer{
   background-image: url(footer.jpg);
   padding: 4em;
   background-attachment: fixed;
+  color: aliceblue;
+  background-size: cover;
 }
