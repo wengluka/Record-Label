@@ -1,61 +1,49 @@
 body{
     margin: 0;
   }
-  .zone{
-    font-size: 3em;
-    border-radius: 4px;
-    border: 1px solid#bbb;
-    background-color: rgba(0, 0, 0, 0.6)
+  #navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    background-color: #333;
+    font-family: fantasy;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-transform: inherit;
+    background-color: transparent;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
   }
 
-.main-nav{
-text-transform: capitalize;
-display: flex;
-justify-content: center;
-list-style: none;
-font-size: 0.7em;
-margin: 0em;
-}
-
-.sticky{
-position: fixed;
-top: 0;
-width: 100%;
-}
-
-li{
-padding: 20px;
-}
-
-.first{
-  background-color: #000000;
-  text-align: center;
-  padding: 2em;
-  text-decoration: double;
-  font-family: 'Times New Roman', Times, serif;
-}
-
 .ceo{
- width: 750px; height: 250px;
+  display: flex;
+ width: 750px; height: 350px;
 }
+
 
 .intro{
-    background-image: url(body.jpg);
+   background-color: #bbb;
     background-attachment: fixed;
-    text-wrap: wrap;
-    color: white;
-    padding: 11em;
+    color: black;
+    padding: 10em;
     background-size:contain;
     align-items: center;
-}
-
-h1{
-  color: blue;
 }
 
 
 .photos{
   display: flex;
+  transition: all 2s;
+}
+
+.photos :hover{
+  transform: scale(1.1);
 }
 
 .apply{
@@ -64,12 +52,97 @@ h1{
 
 .immidate{
   text-align: center;
+  color: #000000;
 }
 
 footer{
   background-image: url(footer.jpg);
-  padding: 4em;
+  padding: 5em;
   background-attachment: fixed;
   color: aliceblue;
   background-size: cover;
+}
+
+.sponsors{
+  display: flex;
+  width: 90px; height: 90px;
+  transition: all 0.2s;
+}
+
+.sponsors :hover{
+  transform: scale(1.1);
+}
+
+.sponsors .partner9{
+  padding: 10px;
+}
+
+.sponsors .partner8{
+  padding: 10px;
+}
+
+.sponsors .partner7{
+  padding: 10px;
+}
+
+.sponsors .partner6{
+  padding: 10px;
+}
+
+.sponsors .partner5{
+  padding: 10px;
+}
+
+.sponsors .partner4{
+  padding: 10px;
+}
+
+.sponsors .partner3{
+  padding: 10px;
+}
+
+.sponsors .partner2{
+  padding: 10px;
+}
+
+.sponsors .partner1{
+  padding: 10px;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 1000px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
 }

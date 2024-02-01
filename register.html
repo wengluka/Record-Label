@@ -5,46 +5,41 @@
         <link rel="stylesheet" type="text/css" href="register.css">
     </head>
      <body>
-      <nav class="zone green sticky">
-        <ul class="main-nav">
-         <li><a href="first.html">Home</a></li>
-         <li><a href="our artists.html">Our Artists</a></li>
-         <li><a href="">Contact</a></li>
-         <li><a href="register.html">Sign a contract</a></li>
-     </ul>
-     </nav>
-        <h1>fill the form correctly!!!</h1><br>
+      <div id="navbar">
+        <a href="first.html">Home</a>
+        <a href="our artists.html">Our Artist</a>
+        <a href="register.html">Register</a>
+      </div>
+     <header>
         <form method="POST">
           <div class="personalinformation">
-            <h2>personal information</h2>
-          First Name: <input type="text" placeholder="first name" name="firstname"required >
-          Last Name:  <input type="text" placeholder="last name" name="lastname"required ><br>
-          Midle Name: <input type="text" placeholder="middle name" name="middlename"required >
-          Email Addr: <input type="email" placeholder="email address" name="email"required ><br>
-          Password:    <input type="password" placeholder="must be 6 characters long" name="password" required minlength="6">
-          Date Of Birth: <input type="date" name="dateofbirth"><br>
-          </div><div class="others">
-            <h2>other information</h2>
-          Age Range:<br>
+            <h1>fill in your information correctly</h1>
+          First Name:<input type="text" placeholder="first name" name="firstname"required >
+          Last Name:<input type="text" placeholder="last name" name="lastname"required ><br>
+          Midle Name:<input type="text" placeholder="middle name" name="middlename"required >
+          Email Addr:<input type="email" placeholder="email address" name="email"required ><br>
+          Password:<input type="password" placeholder="must be 6 characters long" name="password" required minlength="6">
+          Date Of Birth:<input type="date" name="dateofbirth"><br>
+          Age Range:
           <select>
             <option value="11-15" name="11-15">11-15</option>
             <option value="16-20" name="16-20">16-20</option>
             <option value="21-25" name="21-25">21-25</option>
             <option value="26-30" name="26-30">26-30</option>
+            <option value="31-35" name="30-35">30-35</option>
+              <option value="36-40" name="36-40">36-40</option>
           </select><br>
-          Gender:<br>
-            <input type="radio" name="gender" value="MALE">Male<br>
-            <input type="radio" name="gender" value="FEMALE">Female<br>
-            <input type="radio" name="gender" value="OTHERS">Others<br>
+          Gender:
+            <input type="radio" name="gender" value="MALE">Male
+            <input type="radio" name="gender" value="FEMALE">Female
+            <input type="radio" name="gender" value="OTHERS">Others <br>
           Sports invoved in:<br>
           <input type="checkbox" name="football">Football<br>
           <input type="checkbox" name="volleyball">Volleyball<br>
           <input type="checkbox" name="basketball">Basketball<br>
-          <input type="checkbox" name="running">Running<br>
-          <input type="checkbox" name="throwing discos">throwing discos<br>
-          <input type="checkbox" name="throwing short put">throwing short put<br>
+          <input type="checkbox" name=" short put">short put<br>
           <input type="checkbox" name="None">None<br>
-          </div><div class="upload">
+      <div class="upload">
           <FORM action="UPLOAD.PHP"
         method="post"
         enctype="multipart/form-data">
@@ -53,7 +48,9 @@
         name="file"
         accept=".jpg, .pdf, .png"><br>
           </div>
-          <input type="submit" value="apply" class="submit">
+          </header>
+          <input type="submit" value="apply" class="submit"><br>
+          <a href="our artists.html"><H2>Go back to home page</H2></a>
         </form>
     </body>
 </html>

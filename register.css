@@ -2,59 +2,45 @@
     property : value; */
    BODY{
     margin: 0;
-    background-color: rgba(77, 170, 0,0.7 );
+    background-image: url(try1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
-    color: rgba(0, 100, 57,1);
+    color: whitesmoke;
    }
 
-  .zone{
-    
-    font-size: 3em;
-    border-radius: 4px;
-    border: 1px solid#bbb;
-    background-color: rgba(0, 0, 0, 0.6)
-  }
-
-  .main-nav{
-    text-transform: capitalize;
+   #navbar {
     display: flex;
-    justify-content: center;
-    list-style: none;
-    font-size: 0.7em;
-    margin: 0em;
-
- }
-
- .sticky{
     position: fixed;
-    top: 0;
     width: 100%;
+    justify-content: center;
+    background-color: #333;
+    font-family: fantasy;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-transform: inherit;
+    background-color: transparent;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
   }
 
-   li{
-    padding: 20px;
+  header{
+    padding-top: 6em;
   }
 
   .personalinformation{
-    float: left;
     font-size: large;
-    line-height: 60px;
-    padding: 30px;
-    padding-right: 55px;
-    padding-bottom: 80px;
+    line-height: 50px;
+    padding: 1rem;
     text-align: center;
-    padding-top: 5px;
-    background-color: rgba(39, 117, 84, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
-  .others{
-    float: right;
-    padding-right: 290px;
-    padding-left:200px ;
-    text-align: center;
-    font-size: large;
-    background-color: rgba(39, 117, 84, 0.5);
-  }
   .upload{
     clear: both;
     font-size: large;
@@ -62,12 +48,26 @@
   }
   .submit{
     clear: both;
-    background-color: rgba(183, 188, 161, 0.8);
-    color: white;
+    background-color: #333;
+    color: rgba(218, 231, 226, 0.6);
     padding: 19px 400px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 25px;
     margin: 4px 2px;
     cursor: pointer;
     text-align: center;
+  }
+
+  a:link, a:visited {
+    background-color: #0000ff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    border-radius: 15px;
+    height: 15px;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
   }
